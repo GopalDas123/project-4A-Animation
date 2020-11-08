@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(115, 174, 250);
+}
+.wrapper{
+    padding-top:70px ;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    height: 663px;
+    height: 100%;
+}
