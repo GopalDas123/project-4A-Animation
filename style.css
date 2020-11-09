@@ -1,15 +1,73 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: rgb(115, 174, 250);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.wrapper{
-    padding-top:70px ;
-    align-items: center;
-    margin: auto;
-    text-align: center;
-    width: 50%;
-    height: 663px;
-    height: 100%;
+body {
+  background-color: rgb(172, 204, 245);
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
+.cycle{
+  width: 300px;
+  align-items: center;
+  margin: auto;
+  display: flex;
+  margin-top: 100px;
+}
+.cycle img {
+  margin-top: -160px;
+  width: 100%;
+  z-index: 1;
+}
+.bird{
+  width: 150px;
+  margin-top:80px;
+  margin-bottom:50px;
+  margin-left:-120px;
+}
+.road {
+  width: 100%;
+  height: 140px;
+  background-color: rgb(77, 77, 77);
+  margin-top: -70px;
+  z-index: 5;
+}
+.black {
+  width: 100%;
+  height: 220px;
+}
+#white-cont {
+  background-color: rgb(77, 77, 77);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 60px;
+  padding-top: 60px;
+  width: 180%;
+}
+.white {
+  transform: skew(20deg);
+  background-color: rgb(255, 255, 255);
+  width: 5%;
+  height: 9px;
+  display: inline-block;
+  margin: auto;
+}
+
+.grass{
+  /* color: red; */
+  background-color: rgb(44, 245, 78);
+  width: 100%;
+  height: 70px;
+  
+} 
+
+/* 
+.box{
+  background-color: red;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+
+} */
