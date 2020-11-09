@@ -13,8 +13,13 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     
+    - name: Install NodeJS
+      uses: actions/setup-node@v2-beta
+      with:
+        node-version: 12
+      
     - name: Install Surge
-      run: npm install --global surge
+      run: npm install -g surge
 
     - name: Deploy to Surge
-      run: surge ./build project-4a-by-gopal.surge.sh/ --token ${{ secrets.SURGE_TOKEN }}
+      run: surge ./ project-4a-by-gopal.surge.sh/ --token ${{ secrets.SURGE_TOKEN }}
